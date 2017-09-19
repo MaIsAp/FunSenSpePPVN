@@ -1,4 +1,5 @@
 funSenSpePPVN<-function(TP=0,TN=0,FP=0,FN=0,n,alpha=0.05){
+  library(dplyr)
   if(sum(TP,TN,FP,FN,na.rm=T)==n){
     
     Sen<-TP*100/(TP+FN)
